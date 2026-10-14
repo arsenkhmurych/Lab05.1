@@ -3,5 +3,9 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="PR1.vcxproj" />
+  <Folder Name="/Solution Items/">
+    <File Path="PR1.cpp" />
+  </Folder>
+  <Project Path="PR1.vcxproj" Id="58495ef9-ab57-46c1-a4db-a5d57dde1d48" />
+  <Project Path="UnitTest2/UnitTest2.vcxproj" />
 </Solution>
