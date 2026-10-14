@@ -1,3 +1,14 @@
 .vs/
 Debug/
 x64/
+
+.vs/
+Debug/
+x64/
+**/Debug/
+**/x64/
+*.ilk
+*.obj
+*.idb
+*.pdb
+*.exe
