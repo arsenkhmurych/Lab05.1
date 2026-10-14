@@ -1,4 +1,5 @@
-﻿#include "pch.h"
+﻿
+#include "pch.h"
 #include "CppUnitTest.h"
 
 double p(double x);
@@ -11,13 +12,26 @@ namespace UnitTest1
     {
     public:
 
-        TEST_METHOD(TestMethod1)
+        TEST_METHOD(TestPZero)
         {
-            double t;
-            t = p(0.0);
+            double t = p(0.0);
+            Assert::AreEqual(1.0, t, 0.0001);
+        }
 
-            
-            Assert::AreEqual(t, 1.0, 0.0001);
+        TEST_METHOD(TestPOne)
+        {
+            double t = p(1.0);
+            double expected = 1 + sin(1.0) * sin(1.0);
+
+            Assert::AreEqual(expected, t, 0.0001);
+        }
+
+        TEST_METHOD(TestPNegative)
+        {
+            double t = p(-1.0);
+            double expected = 1 + sin(-1.0) * sin(-1.0);
+
+            Assert::AreEqual(expected, t, 0.0001);
         }
     };
 }
